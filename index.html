@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background-img">
+      <h1 id="title">Coffee drinkers survey</h1>
+      <p id="description">
+        Main goal of the survey is finding the most popular coffee based drink
+      </p>
+      <form id="survey-form">
+        <div>
+          <label id="name-label">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+        <div>
+          <label id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div>
+          <label id="number-label">Age</label>
+          <input
+            id="number"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="Age"
+          />
+        </div>
+
+        <div>
+          <select id="dropdown">
+            <option></option>
+            <option></option>
+          </select>
+        </div>
+
+        <div>
+          <input type="radio" id="man" name="radiogroup" value="1" />
+          <label for="man">Male</label>
+          <input type="radio" id="woman" name="radiogroup" value="2" />
+          <label for="women">Female</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="coffee" value="Coffee" />
+          <label for="coffee">Coffee</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="cold-brew" value="Cold Brew" />
+          <label for="cold-brew">Cold brew</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="mocca" value="Mocca" />
+          <label for="mocca">Mocca</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="cappucino" value="Cappuccino" />
+          <label for="cappuccino">Cappuccino</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="latte" value="Latte" />
+          <label for="latte">Latte</label>
+        </div>
+
+        <textarea></textarea>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

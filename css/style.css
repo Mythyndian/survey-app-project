@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  color: aliceblue;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+#survey-form {
+  text-align: center;
+  border-radius: 5%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: brown;
+}
+
+.background-img {
+    min-height: 100%; 
+    text-align: center;
+    position:relative;
+    isolation: isolate;
+    display: grid;
+    place-content: center;
+
+}
+
+.background-img::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: burlywood;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    opacity: .7;
+
+}
