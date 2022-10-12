@@ -5,80 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="background-img">
-      <h1 id="title">Coffee drinkers survey</h1>
-      <p id="description">
-        Main goal of the survey is finding the most popular coffee based drink
-      </p>
+      <header class="header">
+        <h1 id="title">Coffee drinkers survey</h1>
+        <p id="description">
+          Main goal of the survey is finding the most popular coffee based drink
+        </p>
+      </header>
       <form id="survey-form">
-        <div>
+        <div class="form-group">
           <label id="name-label">Name</label>
-          <input id="name" type="text" placeholder="Enter your name" required />
+          <input
+            id="name"
+            class="form-control"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
         </div>
-        <div>
+        <div class="form-group">
           <label id="email-label">Email</label>
           <input
             id="email"
             type="email"
+            class="form-control"
             placeholder="Enter your Email"
             required
           />
         </div>
-        <div>
+        <div class="form-group">
           <label id="number-label">Age</label>
           <input
             id="number"
             type="number"
+            class="form-control"
             min="0"
             max="100"
             placeholder="Age"
           />
         </div>
 
-        <div>
-          <select id="dropdown">
+        <div class="form-group">
+          <label for="dropdown">How often do you drink your coffee</label>
+          <select id="dropdown" class="form-control">
             <option></option>
             <option></option>
           </select>
         </div>
+  
+        <div class="form-group">
+          <p>
+            Gender
+          </p>
+          <label for="man"
+            ><input
+              type="radio"
+              id="man"
+              name="radiogroup"
+              value="1"
+              class="input-radio"
+            />
+            Male</label
+          >
 
-        <div>
-          <input type="radio" id="man" name="radiogroup" value="1" />
-          <label for="man">Male</label>
-          <input type="radio" id="woman" name="radiogroup" value="2" />
-          <label for="women">Female</label>
+          <label for="women"
+            ><input
+              type="radio"
+              id="woman"
+              name="radiogroup"
+              value="2"
+              class="input-radio"
+            />
+            Female</label
+          >
         </div>
+        <p>Select your favorite coffee based drinks</p>
+        <div class="form-group">
+          <label for="coffee"
+            ><input type="checkbox" id="coffee" value="Coffee" class="input-checkbox"
+            /> Coffee</label>
 
-        <div>
-          <input type="checkbox" id="coffee" value="Coffee" />
-          <label for="coffee">Coffee</label>
+          <label for="cold-brew"
+            ><input type="checkbox" id="cold-brew" value="Cold Brew" class="input-checkbox"
+            />Cold brew </label>
+
+          <label for="mocca"
+            ><input type="checkbox" id="mocca" value="Mocca" class="input-checkbox"
+            /> Mocca </label>
+
+          <label for="cappuccino"
+            ><input type="checkbox" id="cappucino" value="Cappuccino" class="input-checkbox"
+            /> Cappuccino
+            </label>
+
+          <label for="latte"
+            ><input type="checkbox" id="latte" value="Latte" class="input-checkbox"
+            /> Latte </label>
         </div>
-
-        <div>
-          <input type="checkbox" id="cold-brew" value="Cold Brew" />
-          <label for="cold-brew">Cold brew</label>
+        <div class="form-group">
+          <p
+            >Describe your best experience with your cup of coffee</p>
+          <textarea id="experience" class="form-control"></textarea>
         </div>
-
-        <div>
-          <input type="checkbox" id="mocca" value="Mocca" />
-          <label for="mocca">Mocca</label>
-        </div>
-
-        <div>
-          <input type="checkbox" id="cappucino" value="Cappuccino" />
-          <label for="cappuccino">Cappuccino</label>
-        </div>
-
-        <div>
-          <input type="checkbox" id="latte" value="Latte" />
-          <label for="latte">Latte</label>
-        </div>
-
-        <textarea></textarea>
-        <input type="submit" id="submit" value="Submit" />
+        <button type="submit" id="submit" class="submit-button">Submit</button>
       </form>
     </div>
   </body>
